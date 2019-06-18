@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+    <changeSet id="5" author="devpriyagoel" context="update">
+        <addColumn tableName="person">
+            <column name="ni" type="varchar(8)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet id="6" author="devpriyagoel" context="update">
+        <addColumn tableName="person">
+            <column name="nicky" type="varchar(8)"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>

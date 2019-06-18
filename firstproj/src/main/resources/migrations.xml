@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+<!--    <changeSet id="1" author="devpriyagoel">-->
+<!--        <createTable tableName="person">-->
+<!--            <column name="id" type="int" autoIncrement="true">-->
+<!--                <constraints primaryKey="true" nullable="false"/>-->
+<!--            </column>-->
+<!--            <column name="name" type="varchar(100)"/>-->
+<!--            <column name="alias" type="varchar(10)">-->
+<!--                <constraints nullable="false"/>-->
+<!--            </column>-->
+<!--        </createTable>-->
+<!--    </changeSet>-->
+
+<!--    <changeSet id="2" author="devpriyagoel">-->
+<!--        <addColumn tableName="person">-->
+<!--            <column name="nickname" type="varchar(8)"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="3" author="devpriyagoel" context="update">-->
+<!--        <addColumn tableName="person">-->
+<!--            <column name="nickyy" type="varchar(8)"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="4" author="devpriyagoel" context="update">-->
+<!--        <dropTable tableName="person"/>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="6" author="devpriyagoel" context="update-new">-->
+<!--        <dropTable tableName="person"/>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="7" author="devpriyagoel" context="update-new">-->
+<!--        <createTable tableName="person">-->
+<!--            <column name="id" type="int" autoIncrement="true">-->
+<!--                <constraints primaryKey="true" nullable="false"/>-->
+<!--            </column>-->
+<!--            <column name="name" type="varchar(100)"/>-->
+<!--            <column name="alias" type="varchar(10)">-->
+<!--                <constraints nullable="false"/>-->
+<!--            </column>-->
+<!--        </createTable>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="6" author="devpriyagoel" context="update-new">-->
+<!--        <loadData tableName="person"-->
+<!--                  file="/Users/devpriyagoel/dropdao/dummy.csv">-->
+<!--            <column name = "name" type="VARCHAR(100)"/>-->
+<!--            <column name = "alias" type="VARCHAR(10)"/>-->
+<!--        </loadData>-->
+<!--    </changeSet>-->
+    <changeSet id="createtable" author="devpriyagoel" context="update">
+        <createTable tableName="person">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(100)"/>
+            <column name="alias" type="varchar(10)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+<!--    <include file="../java/com.mygroup/db/changeLog.xml"/>-->
+
+</databaseChangeLog>
